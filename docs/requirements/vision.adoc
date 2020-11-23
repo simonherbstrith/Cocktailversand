@@ -6,16 +6,25 @@ include::../_includes/default-attributes.inc.adoc[]
 
 
 == Einführung
-Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des <Projektname-Systems> zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung dieser Bedarfe. Die  Details, wie das <Projektname-System> diese Bedarfe erfüllt, werden in der Use-Case und Supplementary Specification beschrieben.
+Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des
+yourCocktail-Systems zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den
+Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung
+dieser Bedarfe. Die Details, wie yourCocktail diese Bedarfe erfüllt, werden in der Use-Case und
+Supplementary Specification beschrieben.
 
 === Zweck
-Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und mit den Begriffen der künftigen Anwender zu beschreiben.
+Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und
+mit den Begriffen der künftigen Anwender zu beschreiben.
 
 === Gültigkeitsbereich (Scope)
-Dieses Visions-Dokument bezieht sich auf das <Projektthema-System>, das von <Team> entwickelt wird. Das System wird es <Zielkunde/Auftraggeber> erlauben, <Hauptfunktionen> zu nutzen, um damit <Vorteile> zu erreichen / <Aufgabe> zu erleichtern / <Problem> zu lösen.
+Dieses Visions-Dokument bezieht sich auf das System yourCocktail, das von Team HTW-IT
+entwickelt wird. Das System wird es dem Barbetreiber der yourCocktail-Bar erlauben, online
+Cocktails zu verkaufen, um damit sein Geschäftsfeld und seinen Kundenstamm zu erweitern sowie
+auf individuelle Kundenbedürfnisse eingehen zu können.
 
 === Definitionen, Akronyme und Abkürzungen
-siehe Glossar (Verweis hier einfügen).
+siehe Glossar 
+
 
 === Referenzen
 (hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
@@ -23,6 +32,13 @@ siehe Glossar (Verweis hier einfügen).
 == Positionierung
 === Fachliche Motivation
 //Erläutern Sie kurz den Hintergrund, in dem das Projekt angesiedelt ist. Welches Problem soll gelöst werden, wie ist es entstanden? Welche Verbesserung wird angestrebt. Achten Sie darauf, eine fachliche (organisatorische, betriebswirtschaftliche) Perspektive einzunehmen.
+Ein Barbetreiber ist auf die Firma zugekommen und möchte seinen Marktbereich durch einen
+Online-Shop für Cocktailversand erweitern. Für die Projektbearbeitung wurde das Team HTW-IT
+ausgewählt. Besucher der Bar fragten häufig, ob man Cocktails selbst zusammenstellen und ob man
+diese auch bestellen könnte. Um besser auf Kundenbedürfnisse eingehen und den Umsatz
+gleichzeitig steigern zu können, möchte er individuell erstellbare und Standardcocktails anbieten.
+Der Barbetreiber erhofft sich eine größere Reichweite, um seine Cocktails verkaufen zu können.
+
 
 === Problem Statement
 //Stellen Sie zusammenfassend das Problem dar, das mit diesem Projekt gelöst werden soll. Das folgende Format kann dazu verwendet werden:
@@ -30,10 +46,25 @@ siehe Glossar (Verweis hier einfügen).
 
 [cols="1,3"]
 |===
-|Das Problem |	[beschreiben Sie das Problem]
-|betrifft |	[die Stakeholder, die vom Problem betroffen sind]
-|die Auswirkung davon ist |	[welche Auswirkungen hat das Problem?]
-|eine erfolgreiche Lösung wäre |	[Führen Sie einige wesentliche Vorteile einer erfolgreichen Lösung auf]
+|Das Problem |	Barbetreiber kann Nachfrage nach Lieferung seiner Cocktails nicht
+erfüllen
+|betrifft |	(potenzielle) Kunden und Barbetreiber
+|die Auswirkung davon ist |	• begrenzte Reichweite, da die Cocktails nur in der Bar verkauft
+werden können
+
+• mögliche Kunden kaufen woanders ein, besonders bei Großaufträgen
+
+→ möglicher Umsatz geht verloren
+
+• Bedürfnisse von Kunden werden nicht erfüllt → sinkende
+Kundenzufriedenheit
+
+• zusätzliche Kosten durch steigenden Anteil an verdorbenen Zutaten
+
+• schlechte Auslastung der bestehenden räumlichen Ressourcen
+|eine erfolgreiche Lösung wäre |	Ein Online-Bestellsystem, dass den kompletten Bestellprozess unterstützt
+und die Erstellung von Individualcocktails ermöglicht. Durch selbst
+kreierbare Cocktails hebt sich der Barbetreiber von der Konkurrenz ab.
 |===
 
 ////
@@ -55,12 +86,15 @@ Beispiel
 
 [cols="1,3"]
 |===
-|Für|	[Zielkunde / Nutzer]
-|der / die|	[Angabe des Bedarfs oder Chance]
-|Das Produkt / die Lösung ist ein | [Produktkategorie]
-|Die / Das	|[Aussage zum Hauptvorteil / Alleinstellungsmerkmal]
-|Im Gegensatz zu	|[wesentliche Lösungsalternative]
-|Unser Produkt|	[Aussage zum Hauptunterschied]
+|Für|	Privatpersonen
+|der / die|	eigene Cocktails kreieren, Cocktails für Partys bestellen und diese von
+Zuhause bestellen können
+|Das Produkt / die Lösung ist ein |Online-Shop für Cocktailversand
+|Die / Das	|die Erstellung von individuellen Cocktails ermöglicht
+|Im Gegensatz zu	|nur bestellbaren Cocktails
+|Unser Produkt|	unterstützt die Bestellung sowohl von geläufigen als auch individuellen
+Cocktails
+
 |===
 
 
@@ -80,45 +114,94 @@ Beispiel
 [%header, cols="1,3,3"]
 |===
 |Name|	Beschreibung	| Verantwortlichkeiten
-|[Benennung des Stakeholder-Typs.]	|[Kurze Beschreibung des Stakeholders.]	|[Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
+|Barbetreiber| betreibt die Bar und möchte seine
+Reichweite vergrößern|
+mixt Cocktails entsprechend der
+Bestellungen und überwacht den
+Fortschritt der Bestellabwicklung sowie
+die Kunden (auf z.B. Missbrauch)|
+Kunde| jede an Cocktails interessierte Person| Cocktails von Zuhause aus bestellen|
+Konkurrent |jegliche Firmen, die Einfluss auf den
+gleichen Marktbereich haben|
+wirtschaftliche Ziele, die zu unseren in
+Konkurrenz stehen|
+Gesetzgeber| gibt rechtliche Rahmenbedingungen vor,
+z.B. durch Gesetze für Jugendschutz,
+Datenschutz und Fernabsatz|
+überwacht Gesetze und Regelungen
+hinsichtlich des Alters, Umgang mit
+personenbezogenen Daten|
+Transportdienstleister|
+liefert Ware aus |erfolgreiche Belieferung des Kunden|
+Zahlungsabwickler|externer Dienst, der Zahlungsvorgang abwickelt|
+korrekte Bezahlung der offenen Beträg	|
+
+//[Kurze Beschreibung des Stakeholders.]	|[Fassen Sie die wesentlichen Verantwortlichkeiten des Stakeholder mit Bezug auf das zu entwickelnde System kurz zusammen, d.h. ihr besonderen Interessen. Beispiele: Dieser Stakeholder sorgt dafür, dass das System gewartet wird / dass die angezeigten Daten aktuell sind / überwacht den Projektfortschritt / usw.]
 |===
 
 === Benutzerumgebung
 Beschreiben Sie die Arbeitsumgebung des Nutzers. Hier sind einige Anregungen:
 
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
-. Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind. Ändert sich das?
-. Wie lange dauert die Bearbeitung der Aufgabe? Wie viel Zeit wird für jeden Arbeitsschritt benötigt? Ändert sich das?
-. Gibt es besondere Umgebungsbedingungen, z.B. mobil, offline, Außeneinsatz, Touchbedienung, Nutzung durch seh- oder hörbeeinträchtigte Personen?
-. Welche Systemplattformen werden heute eingesetzt? Welche sind es ggf. zukünftig?
-. Welche anderen Anwendungen sind im Einsatz? Muss ihre Anwendung mit diesen integriert werden?
+//. Anzahl der Personen, die an der Erfüllung der Aufgabe beteiligt sind. Ändert sich das?
+//. Wie lange dauert die Bearbeitung der Aufgabe? Wie viel Zeit wird für jeden Arbeitsschritt benötigt? Ändert sich das?
+//. Gibt es besondere Umgebungsbedingungen, z.B. mobil, offline, Außeneinsatz, Touchbedienung, Nutzung durch seh- oder hörbeeinträchtigte Personen?
+//. Welche Systemplattformen werden heute eingesetzt? Welche sind es ggf. zukünftig?
+//. Welche anderen Anwendungen sind im Einsatz? Muss ihre Anwendung mit diesen integriert werden?
 
-Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
+//Hier können zudem bei Bedarf Teile des Unternehmensmodells (Prozesse, Organigramme, IT-Landschaft, ...) eingefügt werden, um die beteiligten Aufgaben und Rollen zu skizzieren.
+==== Kunde
+• Anzahl der Kunden variiert und nimmt (voraussichtlich) mit der Zeit zu
+• Kunde ist an einem Bestellprozess interessiert, intuitiv und aufwandsarm ist
+• Bestellung kann nur online erfolgen
+• Bestellung sollte auf unterschiedlichen Endgeräten möglich sein
+
+==== Barbetreiber
+• muss Bestellungen einsehen können
+• Anzahl der Personen, die die Bestellung fertigen können, ist zur Zeit nur der Barbetreiber (kann
+sich in Zukunft erhöhen, beispielsweise wenn weitere Mitarbeiter eingestellt werden)
+• Arbeitsschritte für Bestellung variieren je nach Standard-oder Individualcocktail
+• Darstellung auf einer Desktopansicht
 
 == Produkt-/Lösungsüberblick
 === Bedarfe und Hauptfunktionen
 //Vermeiden Sie Angaben zum Entwurf. Nennen wesentliche Features (Produktmerkmale) auf allgemeiner Ebene. Fokussieren Sie sich auf die benötigten Fähigkeiten des Systems und warum (nicht wie!) diese realisiert werden sollen. Geben Sie die von den Stakeholdern vorgegebenen Prioritäten und das geplante Release für die Veröffentlichung der Features an.
 
 
-[%header, cols="4,1,4,1"]
+[%header, cols="6,1,4,1"]
 |===
 |Bedarf|	Priorität|	Features|	Geplantes Release
-|xx|xx|xx|xx
+|Produktpalette anschauen |hoch| Veranschaulichung von Angeboten
+(Bilder, Menge, Größe, Zutaten, Preis)||
+Cocktails online bestellen| hoch| intuitiver Bestellprozess (Cocktails,
+Kundendaten, Warenkorb,
+Zahlungsmöglichkeiten)||
+Individualcocktamilittel anlegen| mittel| Zutaten, Mengen und Preis||
+Nutzerverwaltunng |niedrig |Registrierung und Daten bearbeiten||
+Bestellverwaltung| hoch| Bestellungen anzeigen und Veränderung der Zustände|
+
 |===
 
 
 == Zusätzliche Produktanforderungen
 //Zutreffendes angeben, nicht zutreffendes streichen oder auskommentieren
+////
 Hinweise:
+
 
 . Führen Sie die wesentlichen anzuwendenden Standards, Hardware oder andere Plattformanforderungen, Leistungsanforderungen und Umgebungsanforderungen auf
 . Definieren Sie grob die Qualitätsanforderungen für Leistung, Robustheit, Ausfalltoleranz, Benutzbarkeit und ähnliche Merkmale, die nicht von den genannten Features erfasst werden.
 . Notieren Sie alle Entwurfseinschränkungen, externe Einschränkungen, Annahmen oder andere Abhängigkeiten, die wenn Sie geändert werden, das Visions-Dokument beeinflussen. Ein Beispiel wäre die Annahme, dass ein bestimmtes Betriebssystem für die vom System erforderliche Hardware verfügbar ist. Ist das Betriebssystem nicht verfügbar, muss das Visions-Dokument angepasst werden.
 . Definieren Sie alle Dokumentationsanforderugen, inkl. Benutzerhandbücher, Onlinehilfe, Installations-, Kennzeichnungs- und Auslieferungsanforderungen-
 . Definieren Sie die Priorität für diese zusätzlichen Produktanforderungen. Ergänzen Sie, falls sinnvoll, Angaben zu Stabilität, Nutzen, Aufwand und Risiko für diese Anforderungen.
+////
 
 [%header, cols="4,1,1"]
 |===
 |Anforderung|	Priorität|	Geplantes Release
-|xx|xx|xx|
+|einfache Bedienbarkeit/einfacher Bestellprozess| hoch||
+Prüfung des Kunden auf Volljährigkeit| hoch||
+System kann nur online genutzt werden (nicht offline) |mittel||
+System muss auf allen gängigen Browsern sowie auf mobilen
+Endgeräten lauffähig sein| mittel||
 |===
