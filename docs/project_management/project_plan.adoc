@@ -1,11 +1,32 @@
 = Projektplan: {project-name}
-Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+Simon Herbstrith <simon.herbstrith@htw-dresden.de>;
 {localdatetime}
 include::../_includes/default-attributes.inc.adoc[]
 // Platzhalter für weitere Dokumenten-Attribute
 
 == Einführung
 //Briefly describe the content of the project plan.
+Der Zweck dieses Dokuments ist es, die wesentlichen Bedarfe und Funktionalitäten des
+yourCocktail-Systems zu sammeln, zu analysieren und zu definieren. Der Fokus liegt auf den
+Fähigkeiten, die von Stakeholdern und adressierten Nutzern benötigt werden, und der Begründung
+dieser Bedarfe. Die Details, wie yourCocktail diese Bedarfe erfüllt, werden in der Use-Case und
+Supplementary Specification beschrieben.
+
+=== Zweck
+Der Zweck dieses Dokuments ist es, die wesentlichen Anforderungen an das System aus Sicht und
+mit den Begriffen der künftigen Anwender zu beschreiben.
+
+=== Gültigkeitsbereich (Scope)
+Dieses Visions-Dokument bezieht sich auf das System yourCocktail, das von Team HTW-IT
+entwickelt wird. Das System wird es dem Barbetreiber der yourCocktail-Bar erlauben, online
+Cocktails zu verkaufen, um damit sein Geschäftsfeld und seinen Kundenstamm zu erweitern sowie
+auf individuelle Kundenbedürfnisse eingehen zu können.
+
+=== Definitionen, Akronyme und Abkürzungen
+Siehe Glossar
+
+//=== Referenzen
+//(hier externe Verweise zu anderen Dokumenten, Quellen, Standards etc. einfügen, sofern notwendig)
 
 == Projektorganisation
 //Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
